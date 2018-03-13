@@ -37,15 +37,7 @@ export class QuillTextEditorComponent implements ControlValueAccessor {
 
   public ngAfterViewInit() {
     this._quill = new Quill(this.nativeElement, {
-      modules: {
-        toolbar: [
-          [{ header: [1, 2, false] }],
-          ['bold', 'underline'],
-          [{ 'list': 'ordered' }],
-          []
-        ]
-      },
-      theme: 'snow'
+      theme: 'bubble'
     });
 
     this._quill.on('text-change', this.onTextChanged);
