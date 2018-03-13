@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  background-color: #fff;
+}
+
+  :host .editor {
+    height: calc(100% - 42px);
+  }
+
+
+.ql-container.ql-snow {
+  border: 1px solid #fff;
+}
